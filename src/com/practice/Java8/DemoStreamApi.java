@@ -1,4 +1,4 @@
-package com.practice.java8;
+package com.practice.Java8;
 
 import java.util.*;
 import java.util.stream.Stream;

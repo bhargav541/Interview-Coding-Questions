@@ -1,4 +1,4 @@
-package com.practice.java;
+package com.practice.Java;
 
 public class BubbleSortingUsing1ForLoop {
     public static void main(String[] args) {

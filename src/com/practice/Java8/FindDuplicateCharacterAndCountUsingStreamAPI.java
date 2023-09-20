@@ -1,4 +1,4 @@
-package com.practice.java8;
+package com.practice.Java8;
 
 import java.util.Map;
 import java.util.stream.Collectors;

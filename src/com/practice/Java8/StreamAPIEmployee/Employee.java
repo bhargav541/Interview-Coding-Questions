@@ -1,4 +1,4 @@
-package com.practice.streamapi;
+package com.practice.Java8.StreamAPIEmployee;
 
 public class Employee {
     private String name;
