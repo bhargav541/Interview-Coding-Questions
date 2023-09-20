@@ -13,6 +13,6 @@ public class SwapTwoNumbers {
         a = b;
         b = temp;
 
-        System.out.println("The Swapped value of a and b is " +a+ " and " +b+ " "+ "respectively");
+        System.out.println("The Swapped value of a and b is " + a + " and " + b + " " + "respectively");
     }
 }

@@ -8,5 +8,5 @@ public class StringImmutabilityExample {
         System.out.println("Initial str2: " + str2); // Output: Initial str2: Hello
         str1 = str1.concat(" World"); // Concatenating " World" to str1 System.out.println("Modified str1: " + str1); // Output: Modified str1: Hello World
         System.out.println("Unchanged str2: " + str2); // Output: Unchanged str2: Hello
-}
+    }
 }

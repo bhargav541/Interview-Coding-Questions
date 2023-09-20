@@ -9,10 +9,10 @@ public class SwapTwoNumbersWithoutTemp {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        a = a+b;
-        b = a-b;
-        a = a-b;
+        a = a + b;
+        b = a - b;
+        a = a - b;
 
-        System.out.println("The Swapped value of a and b is " +a+ " and " +b+ " "+ "respectively");
+        System.out.println("The Swapped value of a and b is " + a + " and " + b + " " + "respectively");
     }
 }

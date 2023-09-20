@@ -1,14 +1,13 @@
-package com.practice.java;
+package com.practice.Revision;
 
 import java.util.*;
 
-public class DuplicateCharactersWithCount {
+public class FindDupCharactersAndCount {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("\nEnter the string whose duplicate to be found");
-        String str = sc.nextLine();
-        HashMap<Character, Integer> map = new HashMap<>();
-        for (Character c : str.toCharArray()) {
+        String s = sc.nextLine();
+        Map<Character, Integer> map = new HashMap<>();
+        for (Character c : s.toCharArray()) {
             int n = 1;
             if (map.containsKey(c)) {
                 n = map.get(c);

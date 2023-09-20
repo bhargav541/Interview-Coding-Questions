@@ -1,9 +1,9 @@
 package com.practice.GarbageCollection;
+
 public class TestGC {
 
     @Override
-    public void finalize()
-    {
+    public void finalize() {
         System.out.println("Object is Garbage collected");
     }
 
@@ -11,8 +11,8 @@ public class TestGC {
 
         TestGC tgc = new TestGC();
         TestGC tgc2 = new TestGC();
-        tgc=null;
-        tgc2=null;
+        tgc = null;
+        tgc2 = null;
         System.gc();
     }
 }

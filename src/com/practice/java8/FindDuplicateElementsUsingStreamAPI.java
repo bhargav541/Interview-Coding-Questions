@@ -1,4 +1,5 @@
 package com.practice.java8;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -6,7 +7,7 @@ public class FindDuplicateElementsUsingStreamAPI {
     public static void main(String[] args) {
 
         //finding the duplicate names from the names list
-        List<String> names = Arrays.asList("Amit", "Kumar","Kumar", "Panda", "Panda", "Amit", "Manju");
+        List<String> names = Arrays.asList("Amit", "Kumar", "Kumar", "Panda", "Panda", "Amit", "Manju");
         Set<String> dupNames = new HashSet<>();
         names.stream().filter(name -> !dupNames.add(name)).forEach(System.out::println);
         System.out.println();
@@ -21,10 +22,10 @@ public class FindDuplicateElementsUsingStreamAPI {
         String input = "I LOVE PROGRAMMING";
         Map<Character, Long> dupCharAndCount = input.chars().mapToObj(c -> (char) c).collect(Collectors.groupingBy(c -> c, Collectors.counting()));
         dupCharAndCount.forEach((character, count) -> {
-            if (count>1) {
-                System.out.println(character + ":" + count);
-            }
-        }
+                    if (count > 1) {
+                        System.out.println(character + ":" + count);
+                    }
+                }
         );
     }
 }

@@ -1,8 +1,9 @@
 package com.practice.java;
+
 public class BubbleSortingUsing1ForLoop {
     public static void main(String[] args) {
         boolean valuesSwitched = false;
-        int[] list = {1,0,1,1,1,0,0,1,0,1,0};
+        int[] list = {1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0};
         int len = list.length;
 
         for (int i = 1; i <= len; i++) {
