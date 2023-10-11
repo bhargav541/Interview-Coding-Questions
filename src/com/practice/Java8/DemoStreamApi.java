@@ -8,18 +8,17 @@ import java.util.stream.Stream;
 public class DemoStreamApi {
 
     public static void main(String[] args) {
+
         //stream can be created in 2 ways
+
         //1. using of()
         //2. using stream()
 
         //1. syntax using of()
-
         Stream<Integer> s = Stream.of(1, 2, 3, 4, 5);
-
         s.filter(i -> i > 2).forEach(System.out::println);
 
         //2. syntax using stream()
-
         List<String> names = Arrays.asList("Bhargav", "Chaitanya", "Manjula", "Manjunatha", "Amit");
         Stream<String> s1 = names.stream();
         s1.filter(a -> a.startsWith("A")).forEach(System.out::println);
