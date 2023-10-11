@@ -24,3 +24,10 @@ public class PalindromeOrNot {
         return true;
     }
 }
+
+//B H A R G A V
+//0 1 2 3 4 5 6
+//
+//i=0; n-1-i = 7 - 1 - 0 = 6
+//i=1; n-1-i = 7 - 1 - 1 = 5
+//i=2; n-1-i = 7 - 1 - 2 = 4

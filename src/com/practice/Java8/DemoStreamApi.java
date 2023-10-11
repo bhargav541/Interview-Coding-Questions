@@ -1,6 +1,8 @@
 package com.practice.Java8;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
 import java.util.stream.Stream;
 
 public class DemoStreamApi {
@@ -38,5 +40,23 @@ public class DemoStreamApi {
         Stream<String> s3 = name.stream();
         s3.map(a -> a.toUpperCase()).forEach(System.out::println);
         //s3.map(String::toUpperCase).forEach(System.out::println); simplest version of above line of code (using method reference)
+
+        //example to use the reduce method
+        List<Integer> listOfNumbers = Arrays.asList(1, 2, 3, 4, 5);
+        int sum = listOfNumbers.stream().reduce(0, (a, b) -> a + b);
+        System.out.println(sum);
+
+        //example for map function
+        List<Integer> squares = Arrays.asList(1, 2, 3, 4, 5);
+        List<Integer> printingSquares = squares.stream().map(x -> x * x).toList();
+        System.out.println(printingSquares);
+
+        //example for flatmap function
+        List<List<String>> checkingFlatMap = Arrays.asList(
+                Arrays.asList("Cinema", "Arjun Reddy"),
+                Arrays.asList("Sports", "Sachin"),
+                Arrays.asList("Coding", "Manja"));
+        List<String> flattenedList = checkingFlatMap.stream().flatMap(Collection::stream).toList();
+        System.out.println(flattenedList);
     }
 }

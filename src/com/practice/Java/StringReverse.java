@@ -9,8 +9,8 @@ public class StringReverse {
         String str1 = sc.nextLine();
         StringBuilder str2 = new StringBuilder();
 
-        int n = str1.length();
-        for (int i = n - 1; i >= 0; i--) {
+        int n = str1.length() - 1;
+        for (int i = n; i >= 0; i--) {
             str2.append(str1.charAt(i));
         }
         System.out.println("The reverse of entered string is" + " " + "=" + " " + str2);
