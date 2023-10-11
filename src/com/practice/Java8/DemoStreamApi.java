@@ -14,6 +14,12 @@ public class DemoStreamApi {
         //1. using of()
         //2. using stream()
 
+        //different types of operations performed are
+
+        //1. Intermediate -> filter, map, distinct and flatmap
+
+        //2. Terminal Operations -> forEach, collect, count, findFirst and findAny
+
         //1. syntax using of()
         Stream<Integer> s = Stream.of(1, 2, 3, 4, 5);
         s.filter(i -> i > 2).forEach(System.out::println);
@@ -37,12 +43,12 @@ public class DemoStreamApi {
         //3. Convert the lowercase names to uppercase
         List<String> name = Arrays.asList("bhargav", "chaitanya", "manjula", "manjunatha", "amit");
         Stream<String> s3 = name.stream();
-        s3.map(a -> a.toUpperCase()).forEach(System.out::println);
+        s3.map(String::toUpperCase).forEach(System.out::println);
         //s3.map(String::toUpperCase).forEach(System.out::println); simplest version of above line of code (using method reference)
 
         //example to use the reduce method
         List<Integer> listOfNumbers = Arrays.asList(1, 2, 3, 4, 5);
-        int sum = listOfNumbers.stream().reduce(0, (a, b) -> a + b);
+        int sum = listOfNumbers.stream().reduce(0, Integer::sum);
         System.out.println(sum);
 
         //example for map function
