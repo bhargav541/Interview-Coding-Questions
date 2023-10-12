@@ -2,7 +2,6 @@ package com.practice.Java;
 
 import java.util.Arrays;
 
-//Bubble Sort Program
 public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = {10, 6, 3, 4, 7, 1, 8, 5, 9, 2};
